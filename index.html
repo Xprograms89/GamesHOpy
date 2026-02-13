@@ -4,32 +4,29 @@
 <meta charset="UTF-8">
 <title>Ad</title>
 
-<style>
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
-    background: black;
-}
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
 
-#bg {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;   /* ВАЖНО */
-    pointer-events: none;  /* чтобы клики шли по рекламе */
-}
+            /* ФОН */
+            background-image: url("Logo.gif");
+            background-size: cover;       /* заполняет весь блок */
+            background-position: center;  /* по центру */
+            background-repeat: no-repeat;
+        }
 
-#ad-container {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    z-index: 2;
-}
-</style>
+        #ad-container {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,6 +39,7 @@ html, body {
 
 </body>
 </html>
+
 
 
 
