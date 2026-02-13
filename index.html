@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <img src="Logo.png" alt="Логотип" class="center-logo">
     <meta charset="UTF-8">
     <title>Ad</title>
 
@@ -14,7 +11,12 @@
             width: 400px;
             height: 400px;
             overflow: hidden;
-            background: transparent;
+
+            /* ФОН */
+            background-image: url("Logo.gif");
+            background-size: cover;       /* заполняет весь блок */
+            background-position: center;  /* по центру */
+            background-repeat: no-repeat;
         }
 
         #ad-container {
@@ -34,5 +36,3 @@
 
 </body>
 </html>
-
-
