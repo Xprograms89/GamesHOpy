@@ -5,28 +5,28 @@
     <title>Ad</title>
 
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 600px;
-            height: 600px;
-            overflow: hidden;
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
 
-            /* ФОН */
-            background-image: url("Logo.gif");
-            background-size: cover;       /* заполняет весь блок */
-            background-position: center;  /* по центру */
-            background-repeat: no-repeat;
-        }
+        background-image: url("Logo.gif");
+        background-size: contain;      /* ВАЖНО */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #000;        /* фон под GIF */
+    }
 
-        #ad-container {
-            width: 600px;
-            height: 600px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
+    #ad-container {
+        width: 400px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
 </head>
 <body>
 
@@ -36,4 +36,5 @@
 
 </body>
 </html>
+
 
