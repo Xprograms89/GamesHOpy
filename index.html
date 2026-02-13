@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Ad</title>
+<meta charset="UTF-8">
+<title>Ad</title>
 
-    <style>
-    html, body {
-        margin: 0;
-        padding: 0;
-        width: 400px;
-        height: 400px;
-        overflow: hidden;
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background: black;
+}
 
-        background-image: url("Logo.gif");
-        background-size: contain;      /* ВАЖНО */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: #000;        /* фон под GIF */
-    }
+#bg {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   /* ВАЖНО */
+    pointer-events: none;  /* чтобы клики шли по рекламе */
+}
 
-    #ad-container {
-        width: 400px;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+#ad-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    z-index: 2;
+}
 </style>
 </head>
+
 <body>
+
+<img id="bg" src="Logo.gif" alt="bg">
 
 <div id="ad-container">
     <script src="https://exterminatordesperate.com/92/4c/41/924c4184a0c3e1f91a7894d90b31603e.js"></script>
@@ -36,5 +42,6 @@
 
 </body>
 </html>
+
 
 
